@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="¡Encripta tus mensajes con el Cifrador César!">
+  <meta name="keywords" content="Cifrador, Encriptar, Criptografía">
+  <meta name="author" content="patokernel">
+  <title>Cifrador César</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link href="styles.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <script src="https://kit.fontawesome.com/33866c4e07.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="julius-caesar-container">
+      <img src="./images/julius-caesar.png" alt="Julius Caesar" />
+      <div class="info-caesar">
+        <h2>Gaius Iulius Caesar</h2>
+        <h3>[100 a.C. - 44 a.C.]</h3>
+      </div>
+    </aside>
+    <main class="encryptor-container">
+      <h1>Cifrador César</h1>
+      <form id="encryptor" autocomplete="off">
+        <input id="input" spellcheck="false" placeholder="Ingrese el texto" type="text" name="text"
+          autofocus="active" />
+        <button><i class="fa-solid fa-angle-right"></i></button>
+      </form>
+      <div id="output"></div>
+      <div class="range">
+        <input id="range" type="range" value="14" min="1" max="27" oninput="this.nextElementSibling.value = this.value">
+        <output class="num-range">14</output>
+      </div>
+    </main>
+    <aside class="concept-container">
+      <p>En criptografía, el cifrado César (también conocido como cifrado por desplazamiento) es una de las técnicas de
+        cifrado más simples y más usadas. <br />
+        Es un tipo de cifrado por sustitución
+        en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de
+        posiciones más adelante en el alfabeto. <br />
+        Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de
+        la A), la B sería reemplazada por la E, etc. <br />
+        Este método debe su nombre a Julio César, que lo usaba para
+        comunicarse con sus generales.</p>
+      <img src="./images/example.jpg" alt="Caesar Cipher">
+    </aside>
+    <footer>
+      <a href="https://github.com/patokernel" target="_blank"><i class="fa-brands fa-github rotate-center"></i></a>
+    </footer>
+  </div>
+</body>
+
+</html>
